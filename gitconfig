@@ -1,0 +1,31 @@
+[user]
+    name = Liam O'Boyle
+    email = liam@ontheroad.net.nz
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
+
+[core]
+	autocrlf = input
+	excludesfile = /home/liam/.gitignore_global
+    editor = /usr/bin/vim
+    excludesfile = /Users/npaolucci/.gitignore_global
+    pager=less -x4
+
+[branch]
+	autosetupmerge = true
+
+[push]
+	default = tracking
+
+[credential]
+	helper = cache --timeout=3600
+
+[diff]
+	algorithm = patience
+
+[include]
+    path = .gitdir/alias.conf

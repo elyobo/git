@@ -10,9 +10,8 @@
 
 [core]
 	autocrlf = input
-	excludesfile = /home/liam/.gitignore_global
+	excludesfile = ~/.gitdir/ignore
     editor = /usr/bin/vim
-    excludesfile = /Users/npaolucci/.gitignore_global
     pager=less -x4
 
 [branch]

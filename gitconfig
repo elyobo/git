@@ -45,5 +45,8 @@
 [difftool "icdiff"]
     cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 
+[pager]
+    difftool = true
+
 [include]
     path = .gitdir/alias.conf

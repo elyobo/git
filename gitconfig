@@ -6,25 +6,25 @@
     diff = auto
     status = auto
     branch = auto
-    ui = auto
+    ui = true
 
 [core]
-	autocrlf = input
-	excludesfile = ~/.gitdir/ignore
+    autocrlf = input
+    excludesfile = ~/.gitdir/ignore
     editor = /usr/bin/vim
-    pager=less -x4
-	safecrlf = true
+    pager = diff-so-fancy | less --tabs=2 -RFX
+    safecrlf = true
 
 [branch]
-	autosetupmerge = true
-	autosetuprebase = always
+    autosetupmerge = true
+    autosetuprebase = always
 
 [merge]
     ff = only
     conflictstyle = diff3
 
 [push]
-	default = simple
+    default = simple
 
 [status]
     showUntrackedFiles = all
@@ -33,10 +33,10 @@
     fsckobjects = true
 
 [credential]
-	helper = cache --timeout=3600
+    helper = cache --timeout=3600
 
 [diff]
-	algorithm = patience
+    algorithm = patience
     tool = icdiff
 
 [difftool]
@@ -50,3 +50,17 @@
 
 [include]
     path = .gitdir/alias.conf
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[diff-so-fancy]
+    first-run = false

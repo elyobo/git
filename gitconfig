@@ -64,3 +64,9 @@
     whitespace = red reverse
 [diff-so-fancy]
     first-run = false
+[rebase]
+	autosquash = true
+[fetch]
+	prune = true
+[remote "origin"]
+	prune = true
